@@ -1,0 +1,5 @@
+- hosts: tereus-kafka
+  roles:
+    - geerlingguy.java
+    - sleighzy.zookeeper
+    - sleighzy.kafka

@@ -1,0 +1,4 @@
+zookeeper_server_address: "fdaa:0:623c:a7b:1596:0:a:402"
+kafka_zookeeper_connect: "fdaa:0:623c:a7b:1596:0:a:402:2181"
+kafka_consumer_bootstrap_servers: "fdaa:0:623c:a7b:1596:0:a:402:9092"
+kafka_producer_bootstrap_servers: "fdaa:0:623c:a7b:1596:0:a:402:9092"
