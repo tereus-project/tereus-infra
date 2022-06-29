@@ -1,5 +1,16 @@
 resource "scaleway_container_namespace" "main" {
   name = "tereus"
+
+  environment_variables = {
+    "ENV"              = "PROD"
+    "LOG_LEVEL"        = "debug"
+    "S3_BUCKET"        = "tereus"
+    "S3_ENDPOINT"      = "ams3.digitaloceanspaces.com"
+    "S3_HTTPS_ENABLED" = true
+
+    # TODO: secrets
+  }
+
 }
 
 resource "scaleway_container" "main" {
