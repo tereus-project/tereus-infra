@@ -1,5 +1,3 @@
-- hosts: tereus-kafka
+- hosts: prod
   roles:
-    - geerlingguy.java
-    - sleighzy.zookeeper
-    - sleighzy.kafka
+    - githubixx.ansible_role_wireguard
