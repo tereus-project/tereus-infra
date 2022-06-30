@@ -11,7 +11,7 @@ resource "scaleway_rdb_instance" "main" {
   user_name     = "admin"
   password      = random_password.admin.result
 
-  disable_backup            = true
+  disable_backup            = false
   backup_schedule_frequency = 24 # every day
   backup_schedule_retention = 7  # keep it one week
 }
