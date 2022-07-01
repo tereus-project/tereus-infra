@@ -34,3 +34,5 @@ override.tf.json
 terraform.rc
 
 terraform/.env
+
+ansible/.vault_pass

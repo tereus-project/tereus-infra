@@ -1,6 +1,9 @@
 - hosts: prod
   roles:
     - githubixx.ansible_role_wireguard
+  vars_files:
+    - vars/vault.yml
 - hosts: monit
   roles:
     - cloudalchemy.prometheus
+    - cloudalchemy.grafana

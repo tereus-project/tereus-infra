@@ -1,0 +1,23 @@
+wireguard_unmanaged_peers:
+  fly:
+    public_key: 7BmyEYJggn/s+UGMGxESAmj0Z1/cWD7utIGutePjkx4=
+    allowed_ips: fdaa:0:623c::/48
+    endpoint: cdg2.gateway.6pn.dev:51820
+    persistent_keepalive: 15
+wireguard_private_key: "{{ wg_pk_nsq }}"
+wireguard_address: "fdaa:0:623c:a7b:9063:0:a:2/120"
+wireguard_dns: "fdaa:0:623c::3"
+wireguard_endpoint: 163.172.156.136
+prometheus_targets:
+  node:
+    - targets:
+        - tereus-transpiler-c-go.internal:8080
+        - tereus-transpiler-ruby-lua.internal:8080
+grafana_datasources:
+  - name: prometheus
+    type: prometheus
+    url: "http://localhost:9090"
+    basicAuth: false
+grafana_security:
+  admin_user: admin
+  admin_password: admin

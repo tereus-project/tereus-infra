@@ -1,0 +1,10 @@
+wireguard_unmanaged_peers:
+  fly:
+    public_key: trM7zOMMKsWHT+F6V08e4e5YVe3VVgf6M8zONd7qzwQ=
+    allowed_ips: fdaa:0:623c::/48
+    endpoint: cdg1.gateway.6pn.dev:51820
+    persistent_keepalive: 15
+wireguard_private_key: "{{ wg_pk_nsq }}"
+wireguard_address: "fdaa:0:623c:a7b:1596:0:a:402/120"
+wireguard_dns: "fdaa:0:623c::3"
+wireguard_endpoint: 51.15.217.73
