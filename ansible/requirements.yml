@@ -1,1 +1,2 @@
 - src: githubixx.ansible_role_wireguard
+- src: cloudalchemy.prometheus

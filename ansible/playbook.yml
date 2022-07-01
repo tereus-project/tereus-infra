@@ -1,3 +1,6 @@
 - hosts: prod
   roles:
     - githubixx.ansible_role_wireguard
+- hosts: monit
+  roles:
+    - cloudalchemy.prometheus
