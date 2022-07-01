@@ -12,7 +12,8 @@ prometheus_targets:
   node:
     - targets:
         - tereus-transpiler-c-go.internal:8080
-        - tereus-transpiler-ruby-lua.internal:8080
+        - tereus-transpiler-lua-ruby.internal:8080
+        - tereus-api.internal:1323
 grafana_datasources:
   - name: prometheus
     type: prometheus
