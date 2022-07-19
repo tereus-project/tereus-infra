@@ -1,5 +1,7 @@
 # Infra
 
+![](./img/archi.png)
+
 ## Terraform
 
 Terraform state is stored on a Scaleway bucket.
